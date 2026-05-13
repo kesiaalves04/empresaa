@@ -13,16 +13,13 @@ def get_base64_image(path):
 img_base64 = get_base64_image("iphone.png")
 zap_base64 = get_base64_image("whatsapp.png")
 
-# LINK DA EMPRESA
-link_empresa = "https://www.apple.com/br/"
-
 # TOPO (imagem clicável)
 col1, col2, col3 = st.columns([1, 2, 1])
 
 with col2:
     st.markdown(f"""
         <div style="text-align: center; margin-bottom: 50px;">
-            <a href="{link_empresa}" target="_blank">
+            <a href="https://www.ifpb.edu.br/" target="_blank">
                 <img src="data:image/png;base64,{img_base64}"
                      width="320"
                      style="border-radius:12px;">
@@ -72,7 +69,7 @@ with col_left:
         ">
             <b>Sobre Kesia:</b><br><br>
 
-            Kesia é estudante e possui interesse em tecnologia,
+            Kesia é estudante do IFPB e possui interesse em tecnologia,
             inovação e desenvolvimento pessoal. Busca constantemente
             aprender novas habilidades e crescer academicamente
             e profissionalmente.
@@ -81,10 +78,9 @@ with col_left:
 
     st.markdown("<div style='margin-top:30px;'>", unsafe_allow_html=True)
 
-    # BOTÃO DA EMPRESA
     st.link_button(
-        "Visitar Site da Empresa",
-        link_empresa
+        "Visitar Site do IFPB",
+        "https://www.apple.com/br/iphone/"
     )
 
     st.markdown("</div>", unsafe_allow_html=True)
